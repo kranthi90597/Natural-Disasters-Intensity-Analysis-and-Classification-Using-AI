@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Disaster Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="/" class="logo">Natural Disaster Detection</a>
+            <nav>
+                <a href="/home">Home</a>
+                <a href="/intro">Introduction</a>
+                <a href="/upload">Start Detection</a>
+                <a href="/team">Meet Our Team</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="main-content">
+        <h1>Welcome to Natural Disaster Detection</h1>
+        <p>Utilizing cutting-edge machine learning and computer vision to detect natural disasters in real time.</p>
+        <p>Use the navigation above to explore features.</p>
+    </section>
+    <section class="marquee-container">
+        <div class="marquee">
+            <div class="marquee-item">
+                <img src="{{ url_for('static', filename='images/disaster1.jpg') }}" alt="Disaster 1">
+                <p class="image-name">Earthquakes</p>
+            </div>
+            <div class="marquee-item">
+                <img src="{{ url_for('static', filename='images/disaster2.jpeg') }}" alt="Disaster 2">
+                <p class="image-name">Wildfires</p>
+            </div>
+            <div class="marquee-item">
+                <img src="{{ url_for('static', filename='images/disaster3.jpg') }}" alt="Disaster 3">
+                <p class="image-name">Floods</p>
+            </div>
+            <div class="marquee-item">
+                <img src="{{ url_for('static', filename='images/disaster4.jpg') }}" alt="Disaster 4">
+                <p class="image-name">Cyclones</p>
+            </div>
+            <div class="marquee-item">
+                <img src="{{ url_for('static', filename='images/disaster5.jpeg') }}" alt="Disaster 5">
+                <p class="image-name">Droughts</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <p>&copy; 2024 Natural Disaster Detection | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

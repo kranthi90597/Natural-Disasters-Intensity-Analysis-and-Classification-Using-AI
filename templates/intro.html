@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/intro.css') }}">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="/" class="logo">Natural Disaster Detection</a>
+            <nav>
+                <a href="/home">Home</a>
+                <a href="/intro">Introduction</a>
+                <a href="/upload">Start Detection</a>
+                <a href="/team">Meet Our Team</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-content">
+        <h1>Introduction</h1>
+        <p>This application uses machine learning and computer vision to detect natural disasters in real-time.</p>
+        <p>The system leverages a pre-trained model to classify images captured via webcam as Cyclone, Earthquake, Flood, or Wildfire.</p>
+        <p>Real-time data from your webcam is processed, and the system attempts to predict the disaster type based on the visual input.</p>
+        <p>Click "Start Detection" to begin using the system.</p>
+        <a href="/home" class="btn">Go back to Home</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Natural Disaster Detection | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

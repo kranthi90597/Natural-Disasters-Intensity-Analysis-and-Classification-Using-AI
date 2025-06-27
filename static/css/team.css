@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navbar */
+header {
+    background-color: #0056b3;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #218838;
+}
+
+/* Team Container */
+.team-container {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Team Leader */
+.team-leader {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.team-leader img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.team-leader .member-info h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.team-leader .member-info p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Team Members Section */
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.team-member {
+    width: 150px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 170px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.team-member .member-info h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.team-member .member-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%; /* Adjust for mobile screen */
+    }
+
+    .team-leader img {
+        width: 150px; /* Adjust leader's image size for mobile */
+    }
+}

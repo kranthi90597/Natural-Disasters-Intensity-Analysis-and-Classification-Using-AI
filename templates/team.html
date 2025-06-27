@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Team</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/team.css') }}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="/" class="logo">Natural Disaster Detection</a>
+            <nav>
+                <a href="/home">Home</a>
+                <a href="/intro">Introduction</a>
+                <a href="/upload">Start Detection</a>
+                <a href="/team">Meet Our Team</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="team-container">
+        <!-- Team Leader -->
+        <div class="team-leader">
+            <img src="{{ url_for('static', filename='images/kranthi.jpg') }}" alt="Team Leader">
+            <div class="member-info">
+                <h2>Kranthi kumar Yatakala</h2>
+                <p>Team Leader, Frontend Developer</p>
+            </div>
+        </div>
+
+        <!-- Team Members -->
+        <div class="team-members">
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/pallavi.png') }}" alt="Member 1">
+                <div class="member-info">
+                    <h3>Pallavi Challagonda</h3>
+                    <p>Model Building</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/Surendar.png') }}" alt="Member 2">
+                <div class="member-info">
+                    <h3>Surendar Erumalla</h3>
+                    <p>Dealed with Dataset</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/Harish.jpeg') }}" alt="Member 3">
+                <div class="member-info">
+                    <h3>Harish Kumar Ram</h3>
+                    <p>Preprocessing the data</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/Avinash.jpeg') }}" alt="Member 4">
+                <div class="member-info">
+                    <h3>Avinash Katkuri</h3>
+                    <p>Model Building</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Natural Disaster Detection | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
