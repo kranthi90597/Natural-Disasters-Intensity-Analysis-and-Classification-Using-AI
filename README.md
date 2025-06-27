@@ -1,0 +1,1 @@
+# kranthi90597-Natural-Disasters-Intensity-Analysis-and-Classification-Using-AI
